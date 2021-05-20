@@ -32,7 +32,8 @@ else:
     print('Please input a valid age')
 ```
 
-### loops
+### Loops
+#### for loop
 ```python
 list_data = [1, 2, 3, 4, 5]
 for number in list_data:
@@ -56,13 +57,25 @@ student_1 = {
     'completed_lesson_names': ["variables", "operators", "data_collections"]  # list
 
 }
-# for data in student_1:
-#     print(data)  # only prints the keys
-# for data in student_1.values():
-#     print(data)  # only prints the values
+for data in student_1:
+    print(data)  # only prints the keys
+for data in student_1.values():
+    print(data)  # only prints the values
 
 for data in student_1.values():
     if data == "Cyber Security":
         break
     print(data)
+```
+#### while loop
+```python
+# while loops
+user_prompt = True
+while user_prompt:
+    age = input('Please enter your age:  ')
+    if age.isdigit():
+        user_prompt = False
+    else:
+        print('Please enter a digit')
+print(f'your age is {age}')  # f does the same as .format
 ```
